@@ -121,7 +121,7 @@ $ n^(log_(5) 5) = n^1 = n, f(n) = sqrt(n) < n, n_0 > 1 $
 
 $ "Because " f(n) < n^(log_(b) a), T(n)=Theta(n^(log_(b) 1)) => T(n) = n $
 
-= Problem 3
+= Problem 4
 
 ==
 
@@ -139,4 +139,4 @@ $ "Because " n^(log_(b) a) < f(n), T(n) = Theta(f(n)), T(n) = Theta(n^2) $
 
 $ T(k)  <= c k^2 < n $
 
-$ "test" $
+
