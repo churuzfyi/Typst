@@ -15,6 +15,7 @@
 )
 
 #set text(
+  font: "Liberation Serif",
   size: 11pt,
   weight: "regular",
   lang: "en"
@@ -395,10 +396,15 @@ Logical operators such as the add, subtract, and AND operations were discussed a
 The purpose of the experiment was to gain a better understanding of the AVR instruction set and become familiarized with the MPLAB X IDE which is used to program the ATmega328P(B). Ultimately, this was achieved, as the experiment has turned up ample information regarding not just the instructions themselves but their limitations, their connections to the physical microprocessor and how they can be observed within the IDE's debug system. Further research can be conducted regarding the instructions as a large portion of them is not reviewed by this report. However, future research experiments will be made easier with the compounded knowledge that is available in this report from assessing this small portion.
 
 #pagebreak()
-#set par(first-line-indent: 2em)
+#set par(first-line-indent: 0em, hanging-indent: 2em)
 #set page(margin: (top: top-margin-nheader))
 
 #align(left)[
   #set text(size: title-font-size, weight: "bold")
   References
 ]
+
+Microchip Technology Inc. 2018. AVR® Microcontroller with Core Independent Peripherals
+and PicoPower® Technology, ATmega328P(B)
+
+Microchip Technology Inc. 2022. MPLAB® X IDE User’s Guide
