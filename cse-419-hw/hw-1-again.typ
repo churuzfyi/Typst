@@ -137,6 +137,18 @@ $ n^(log_(3) 4) < n^2 $
 
 $ "Because " n^(log_(b) a) < f(n), T(n) = Theta(f(n)), T(n) = Theta(n^2) $
 
-$ T(k)  <= c k^2 < n $
+==
 
+$ T(n) <= c n^2 $
 
+$ T(n/3) <= c(n/3)^2 $
+
+$ => T(n) <= 4T(n/3) + n^2 => T(n) = 4[c(n/3)^2 + n^2 => T(n) = 4((c n^2)/9) + n^2 $
+
+$ => T(n) <= 4/9 c n^2 + n^2  => 4/9 c n^2 + n^2 <= c n^2 $
+
+$ => 4/9 c +1 <= c => 1 <= c-4/9 c => 1 <= 5/9 c => 9/5 <= c $
+
+$ T(n) = O(n^2) "holds while" c >= 9/5 = 1.8 $
+
+$ "If" T(1)=1 "then" T(1)=c(1)^2 "is" 1 <= c "which satiesfies the above conclusion." $
